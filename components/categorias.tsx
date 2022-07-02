@@ -123,7 +123,7 @@ const Categorias = () => {
               fontWeight="extrabold"
               letterSpacing="tight"
               textAlign={{ base: "center", md: "left" }}
-              color="gray.900"
+              color="gray.300"
               _dark={{ color: "gray.300" }}
               lineHeight={{ md: "shorter" }}
               
