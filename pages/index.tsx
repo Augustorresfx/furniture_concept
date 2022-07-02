@@ -1,12 +1,16 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+import {GetStaticProps} from "next";
 import Categorias from '../components/categorias'
 import Footer from '../components/footer'
 import Hero from '../components/hero'
-import styles from '../styles/Home.module.css'
+import StoreScreen from '../product/screens/Store'
+import api from "../product/api";
+import {Product} from "../product/types";
 
-const Home: NextPage = () => {
+interface Props {
+  products: Product[];
+}
+
+const Home: React.FC<Props> = ({products}) => {
   return (
 <>
 <header>
@@ -16,13 +20,24 @@ const Home: NextPage = () => {
         <Categorias/>
       </section>
       <section id="productos">
-        
+        <StoreScreen products={products} />
       </section>
       <footer>
       <Footer/>
       </footer>
       </>
   )
-}
+};
+
+export const getStaticProps: GetStaticProps = async () => {
+  const products = await api.list();
+
+  return {
+    revalidate: 10,
+    props: {
+      products,
+    },
+  };
+};
 
 export default Home
