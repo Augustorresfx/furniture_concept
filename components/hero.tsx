@@ -30,7 +30,7 @@ const Hero = () => {
           pos="relative"
           justify="center"
           boxSize="full"
-          maxH={688}
+          maxH={"100vh"}
           bg="blackAlpha.600"
         >
           <Stack textAlign="center" alignItems="center" spacing={6}>
@@ -48,7 +48,7 @@ const Hero = () => {
                 hogar
               </chakra.span>
             </Heading>
-            <Link href={'#more'}>
+            <Link href={'#categorias'}>
             <Button
             color={'#90C8AC'}
             colorScheme={'green'}

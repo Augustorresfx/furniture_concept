@@ -47,13 +47,13 @@ const Navbar = () => {
                 }}
               >
                 <Link href="/">
-                <Button variant="ghost">Inicio</Button>
+                <Button color={"white"} variant="ghost">Inicio</Button>
                 </Link>
                 <Link href="#categorias">
-                <Button variant="ghost">Categorías</Button>
+                <Button color={"white"} variant="ghost">Categorías</Button>
                 </Link>
                 <Link href="#productos">
-                <Button variant="ghost">Productos</Button>
+                <Button color={"white"} variant="ghost">Productos</Button>
                 </Link>
               </HStack>
               <Box
@@ -101,13 +101,13 @@ const Navbar = () => {
                   />
   
                 <Link href="/">
-                  <Button variant="ghost">Inicio</Button>
+                  <Button color={"white"} variant="ghost">Inicio</Button>
                 </Link>
                 <Link href="#categorias">
-                  <Button variant="ghost">Categorías</Button>
+                  <Button color={"white"} variant="ghost">Categorías</Button>
                 </Link>
                 <Link href="#productos">
-                  <Button variant="ghost">Productos</Button>
+                  <Button color={"white"} variant="ghost">Productos</Button>
                 </Link>
                 </VStack>
               </Box>
