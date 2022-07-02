@@ -10,7 +10,7 @@ const colors = {
 
 const config = {
     useSysyemColorMode: false,
-    initialColorMode: "light",
+    initialColorMode: "dark",
 }
 const theme = extendTheme({config, fonts, colors })
 
