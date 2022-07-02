@@ -31,7 +31,7 @@ const Navbar = () => {
                <Image w={12} h={12} src="https://i.postimg.cc/3RQLzqfG/logo-718933482-1630282835-c548d8ad8eeb6600f1c034332141e20c1630282835-480-0.png"/>
               </chakra.a>
               
-              <chakra.h1 mt={2} fontSize="xl" fontWeight="medium" ml="4">
+              <chakra.h1 color="white" mt={2} fontSize="xl" fontWeight="medium" ml="4">
                 Acapulco Hogar
                 
               </chakra.h1>
@@ -69,7 +69,7 @@ const Navbar = () => {
                   }}
                   aria-label="Open menu"
                   fontSize="20px"
-                  color="gray.800"
+                  color="white"
                   _dark={{
                     color: "inherit",
                   }}
@@ -96,6 +96,7 @@ const Navbar = () => {
                   
                 >
                   <CloseButton
+                  color="white"
                     aria-label="Close menu"
                     onClick={mobileNav.onClose}
                   />
